@@ -38,3 +38,21 @@ func Equal[T constraints.Ordered](a, b []T) bool {
 
 	return true
 }
+
+// Sum returns the sum of the elements of the slice.
+func Sum[T constraints.Integer | constraints.Float](s []T) T {
+	var sum T
+	for i := 0; i < len(s); i++ {
+		sum += s[i]
+	}
+	return sum
+}
+
+// Prod returns the product of the elements of the slice.
+func Prod[T constraints.Integer | constraints.Float](s []T) T {
+	var prod T = 1
+	for i := 0; i < len(s); i++ {
+		prod *= s[i]
+	}
+	return prod
+}
