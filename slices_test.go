@@ -5,8 +5,8 @@
 package slices_test
 
 import (
-	"testing"
 	"github.com/vorduin/slices"
+	"testing"
 )
 
 func TestWithLen(t *testing.T) {
