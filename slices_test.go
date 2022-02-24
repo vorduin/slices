@@ -29,9 +29,9 @@ func TestWithCap(t *testing.T) {
 	}
 }
 
-func TestCopyInt(t *testing.T) {
+func TestCloneInt(t *testing.T) {
 	orig := []int{1, 2, 3}
-	cp := slices.Copy(orig)
+	cp := slices.Clone(orig)
 	orig[0] = 0
 
 	if cp[0] == 0 {
@@ -39,9 +39,9 @@ func TestCopyInt(t *testing.T) {
 	}
 }
 
-func TestCopyString(t *testing.T) {
+func TestCloneString(t *testing.T) {
 	orig := []string{"the", "slices", "author"}
-	cp := slices.Copy(orig)
+	cp := slices.Clone(orig)
 	orig[0] = "a"
 
 	if cp[0] == "a" {
@@ -49,9 +49,9 @@ func TestCopyString(t *testing.T) {
 	}
 }
 
-func TestCopy2DSlice(t *testing.T) {
+func TestClone2DSlice(t *testing.T) {
 	orig := [][]int{{1}, {2}, {3}}
-	cp := slices.Copy(orig)
+	cp := slices.Clone(orig)
 	orig[0] = []int{0}
 
 	if cp[0][0] == 0 {
@@ -87,7 +87,7 @@ func TestEqualString(t *testing.T) {
 	}
 
 	s2 := []string{"a", "slices", "author"}
-	if !slices.Equal(s1, s2) {
+	if slices.Equal(s1, s2) {
 		t.Fail()
 	}
 }

@@ -16,8 +16,8 @@ func WithCap[T any](c int) []T {
 	return make([]T, 0, c)
 }
 
-// Copy makes a new slice and copies the given slice's elements into it.
-func Copy[T any](s []T) []T {
+// Clone makes a new slice and copies the given slice's elements into it.
+func Clone[T any](s []T) []T {
 	cp := make([]T, len(s))
 	copy(cp, s)
 
