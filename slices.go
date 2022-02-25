@@ -4,7 +4,7 @@
 
 package slices
 
-import "constraints"
+import "golang.org/x/exp/constraints"
 
 // WithLen makes a new slice with the given length and returns it.
 func WithLen[T any](l int) []T {
