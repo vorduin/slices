@@ -45,4 +45,6 @@ func main() {
 }
 ```
 
+# License
+
 Slices a BSD-style license, which can be found in the [LICENSE](https://github.com/vorduin/slices/blob/main/LICENSE) file.
