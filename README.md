@@ -26,7 +26,7 @@ func main() {
 	incByOne := func(x int) int {
 		return x + 1
 	}
-	s = slices.Map(incByOne, s) // creates a a copy of s and maps the function on it
+	s = slices.Map(incByOne, s) // creates a copy of s and maps the function on it
 	// s is now [2, 3, 4]
 
 	r := slices.Repeat(s, 2) // repeats s 2 times
