@@ -3,7 +3,20 @@ A utility package for working with slices.
 
 This package resembles the `strings` and `bytes` packages in the Go standard library.
 
-# Example Usage
+## Installation
+
+Nune requires Go v1.18 as it's entirely based on generics in order to achieve a flexible interface.
+Go v1.18 is currently only available in beta version, which can be downloaded [here](https://go.dev/dl/).
+
+After installing Go1.18, simply run this in your terminal...
+
+```zsh
+go get github.com/vorduin/nune
+```
+
+... and you're good to Go!
+
+## Example Usage
 
 ```go
 package main
@@ -45,6 +58,6 @@ func main() {
 }
 ```
 
-# License
+## License
 
 Slices a BSD-style license, which can be found in the [LICENSE](https://github.com/vorduin/slices/blob/main/LICENSE) file.
