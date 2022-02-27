@@ -5,13 +5,13 @@ This package resembles the `strings` and `bytes` packages in the Go standard lib
 
 ## Installation
 
-Nune requires Go v1.18 as it's entirely based on generics in order to achieve a flexible interface.
+Slices requires Go v1.18 as it's entirely based on generics in order to achieve a flexible interface.
 Go v1.18 is currently only available in beta version, which can be downloaded [here](https://go.dev/dl/).
 
 After installing Go1.18, simply run this in your terminal...
 
 ```zsh
-go get github.com/vorduin/nune
+go get github.com/vorduin/slices
 ```
 
 ... and you're good to Go!
